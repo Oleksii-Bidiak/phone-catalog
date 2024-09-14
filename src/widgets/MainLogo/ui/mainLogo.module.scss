@@ -1,0 +1,15 @@
+@import '../../../shared/styles/common/mixins';
+@import '../../../shared/styles/vars/global';
+
+.mainLogo {
+  height: 100%;
+  width: rem(96);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+
+  @media (min-width:$tablet) {
+    width: rem(128);
+  }
+}

@@ -1,0 +1,31 @@
+@import '../../../../shared/styles/common/mixins';
+
+.filters {
+  @include page-grid;
+
+  row-gap: rem(16);
+
+  .sort {
+    grid-column: span 2;
+
+    @media (min-width:$mobile) {
+      grid-column: 1 / 5;
+    }
+  }
+
+  .pages {
+    grid-column: span 2;
+
+    @media (min-width:$mobile) {
+      grid-column: 5 / 8;
+    }
+  }
+
+  .search {
+    grid-column: 1 / -1;
+
+    @media (min-width:$tablet) {
+      grid-column: 8 / -1;
+    }
+  }
+}

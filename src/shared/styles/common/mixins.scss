@@ -1,0 +1,17 @@
+@import '../vars/global';
+
+@mixin page-grid {
+  --columns: 4;
+
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  column-gap: rem(16);
+
+  @media (min-width:$mobile) {
+    --columns: 12;
+  }
+
+  @media (min-width:$tablet) {
+    --columns: 24;
+  }
+}

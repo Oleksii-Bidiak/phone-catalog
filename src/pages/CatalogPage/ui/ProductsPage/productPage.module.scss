@@ -1,0 +1,11 @@
+@import '../../../../shared/styles/common/mixins';
+@import '../../../../shared/styles/vars/global';
+
+.productPage__filter {
+  padding-top: rem(32);
+  margin-bottom: rem(24);
+
+  @media (min-width:$mobile) {
+    padding-top: rem(40);
+  }
+}

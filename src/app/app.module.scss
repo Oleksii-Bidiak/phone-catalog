@@ -1,0 +1,19 @@
+@import '../shared/styles/common/mixins';
+@import '../shared/styles/vars/global';
+
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+
+  .menuOpen {
+    overflow: hidden;
+    touch-action: none;
+  }
+
+  >main {
+    flex: 1 1 auto;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../../shared/styles/vars/global';
+
+.wrapper {
+  height: rem(280);
+  width: rem(280);
+  margin: 0 auto;
+
+  img {
+    height: rem(280);
+    width: rem(280);
+    object-fit: contain;
+  }
+}
